@@ -1,0 +1,9 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import './scss/base/typography';
+@import './scss/base/colors';
+@import './scss/base/gradient';
+
+body, html {
+  height:100%;
+}

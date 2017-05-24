@@ -1,0 +1,15 @@
+@import './colors';
+
+.responsive-gradient-bg {
+  background: linear-gradient(135deg, $gradient-3 0%, $gradient-2 49%, $gradient-1  100%);
+}
+
+.responsive-grey-gradient-bg {
+  background: linear-gradient(-225deg, $grey-gradient-5 0%, $grey-gradient-4 10%, $grey-gradient-3 67%, $grey-gradient-2 72%, $grey-gradient-1 100%);
+}
+
+.global-height {
+  height: 100%;
+  width: 100%;
+  display: block;
+}

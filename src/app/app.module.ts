@@ -4,17 +4,30 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import {OnboardingComponent} from './onboarding/onboarding.component';
+import {RouterModule, Routes} from '@angular/router';
+import {AppRoutingModule} from './app-routing.module';
+import { FishComponent } from './fish/fish.component';
 
+const  appRoutes: Routes = [
+  { path: 'onboarding', component: OnboardingComponent }
+
+
+];
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    OnboardingComponent,
+    FishComponent
   ],
   imports: [
+    RouterModule.forRoot(appRoutes),
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    AppRoutingModule
   ],
-  providers: [],
+  providers: [OnboardingComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
